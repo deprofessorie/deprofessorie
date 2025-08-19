@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance System</h1>
+        <div id="message"></div>
+
+        <div id="registration-section">
+            <h2>Register</h2>
+            <input type="text" id="username" placeholder="Enter username">
+            <button id="register-button">Register with Fingerprint</button>
+        </div>
+
+        <div id="login-section">
+            <h2>Clock In</h2>
+            <input type="text" id="login-username" placeholder="Enter username">
+            <button id="login-button">Clock In with Fingerprint</button>
+        </div>
+    </div>
+
+    <script src="https://bundle.jsdelivr.net/npm/@simplewebauthn/browser/dist/bundle/index.umd.min.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
